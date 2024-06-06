@@ -300,7 +300,10 @@ export default function Home() {
     <main className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 p-4 mt-32">
       {words?.map((word) => {
         return (
-          <button className="text-gray-400 text-2xl" key={word?.input}>
+          <button
+            className="transition hover:scale-105 hover:text-white text-gray-400 text-2xl"
+            key={word?.input}
+          >
             {word?.input}
           </button>
         );
