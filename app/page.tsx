@@ -211,7 +211,11 @@ const words = [
   },
   {
     lang: "en",
-    input: "can you how many",
+    input: "can you",
+  },
+  {
+    lang: "en",
+    input: "how many",
   },
   {
     lang: "en",
