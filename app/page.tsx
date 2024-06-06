@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const words = [
   {
@@ -313,15 +314,16 @@ const words = [
 
 export default function Home() {
   return (
-    <main className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 p-4 mt-32">
+    <main className="grid justify-center items-center ml-8 sm:ml-44  gap-8 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 p-4 mt-32">
       {words?.map((word) => {
         return (
-          <button
+          <Link
+            href={`/w/${word?.input}`}
             className="transition hover:scale-105 hover:text-white text-gray-400 text-2xl"
             key={word?.input}
           >
             {word?.input}
-          </button>
+          </Link>
         );
       })}
     </main>
