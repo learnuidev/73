@@ -297,6 +297,18 @@ const words = [
     lang: "en",
     input: "all",
   },
+  {
+    lang: "en",
+    input: "i would like",
+  },
+  {
+    lang: "en",
+    input: "where is",
+  },
+  {
+    lang: "en",
+    input: "do you know",
+  },
 ];
 
 export default function Home() {
